@@ -3,7 +3,7 @@
 	url = https://gitlab.linphone.org/BC/public/belle-sip.git
 [submodule "cmake-builder"]
 	path = cmake-builder
-	url = git@github.com:divusgmbh/linphone-cmake-builder.git
+	url = http://vsgit.office.pexta.eu/products/linhome/linphone-cmake-builder.git
 [submodule "liblinphone"]
 	path = liblinphone
 	url = https://gitlab.linphone.org/BC/public/liblinphone.git
@@ -42,7 +42,7 @@
 	url = https://gitlab.linphone.org/BC/public/ortp.git
 [submodule "mediastreamer2"]
 	path = mediastreamer2
-	url = git@github.com:divusgmbh/mediastreamer2.git
+	url = http://vsgit.office.pexta.eu/products/linhome/mediastreamer2.git
 [submodule "mswasapi"]
 	path = mswasapi
 	url = https://gitlab.linphone.org/BC/public/mswasapi.git
@@ -60,7 +60,7 @@
 	url = https://gitlab.linphone.org/BC/public/external/speex.git
 [submodule "external/ffmpeg"]
 	path = external/ffmpeg
-	url = git@github.com:divusgmbh/ffmpeg.git
+	url = http://vsgit.office.pexta.eu/products/linhome/ffmpeg.git
 [submodule "external/libvpx"]
 	path = external/libvpx
 	url = https://gitlab.linphone.org/BC/public/external/libvpx.git
