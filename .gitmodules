@@ -6,7 +6,7 @@
 	url = http://vsgit.office.pexta.eu/products/videophone_mobile/linphone-cmake-builder.git
 [submodule "liblinphone"]
 	path = liblinphone
-	url = https://gitlab.linphone.org/BC/public/liblinphone.git
+	url = git@vsgit.office.pexta.eu:products/videophone_mobile/liblinphone.git
 [submodule "bcg729"]
 	path = bcg729
 	url = https://gitlab.linphone.org/BC/public/bcg729.git
