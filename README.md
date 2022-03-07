@@ -8,6 +8,12 @@ Its compilation produces a SDK suitable to create applications running on top of
 The submodules that are not developped or maintained by the Linphone team are grouped in the external/ directory.
 The currently supported platforms are Android, iOS, Desktop (Linux, Windows, Mac OS X) and UWP (Universal Windows Platform).
 
+### DIVUS GmbH license and trademarks
+
+The code is released under the terms of the GNU/GPLv3 license.
+
+"DIVUS", "VIDEOPHONE Mobile" and other branding names are trademarks of DIVUS GmbH and if you plan to build the app for redistribution must be replaced in icons, images and labels.
+
 ## License
 
 Copyright © Belledonne Communications
