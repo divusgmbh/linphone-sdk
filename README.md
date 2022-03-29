@@ -8,11 +8,36 @@ Its compilation produces a SDK suitable to create applications running on top of
 The submodules that are not developped or maintained by the Linphone team are grouped in the external/ directory.
 The currently supported platforms are Android, iOS, Desktop (Linux, Windows, Mac OS X) and UWP (Universal Windows Platform).
 
-### DIVUS GmbH license and trademarks
+## DIVUS GmbH license and trademarks
 
 The code is released under the terms of the GNU/GPLv3 license.
 
 "DIVUS", "VIDEOPHONE Mobile" and other branding names are trademarks of DIVUS GmbH and if you plan to build the app for redistribution must be replaced in icons, images and labels.
+
+## DIVUS VIDEOPHONE Mobile build instructions
+
+Using the code in the `-divus` branches you can build the app following the general instruction described below.
+
+As an example, this can be used to build `linphone-sdk`:
+```
+git clone https://github.com/divusgmbh/linphone-sdk.git
+cd linphone-sdk
+git checkout 5.0.3-divus
+git submodule update --init --recursive
+mkdir -p build
+cd build
+DATETIME="$(date +'%Y%m%d%H%M%S')"
+git tag -a "5.1.0-divus-$DATETIME" -m 'temporary tag for building'
+cmake .. -DLINPHONESDK_PLATFORM=Android \
+        -DLINPHONESDK_ANDROID_ARCHS=arm64 \
+        -DENABLE_GPL_THIRD_PARTIES=ON \
+        -DENABLE_UNMAINTAINED=ON \
+        -DENABLE_FFMPEG=ON \
+        -DENABLE_OPENH264=OFF \
+        -DENABLE_DEBUG_LOGS=YES \
+        -DENABLE_MKV=NO
+make -j 4
+```
 
 ## License
 
