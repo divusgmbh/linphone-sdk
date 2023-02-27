@@ -33,7 +33,8 @@ dependencies {
     javadocDeps 'org.apache.commons:commons-compress:1.16.1'
     compileOnly "androidx.media:media:1.2.0"
     implementation 'androidx.annotation:annotation:1.1.0'
-    compileOnly 'com.google.firebase:firebase-messaging:19.0.1'
+	compileOnly platform('com.google.firebase:firebase-bom:31.2.0')
+    compileOnly 'com.google.firebase:firebase-messaging'
 }
 
 def rootSdk = '@LINPHONESDK_BUILD_DIR@/linphone-sdk/android-@LINPHONESDK_FIRST_ARCH@'
