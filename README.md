@@ -22,12 +22,12 @@ As an example, this can be used to build `linphone-sdk`:
 ```
 git clone https://github.com/divusgmbh/linphone-sdk.git
 cd linphone-sdk
-git checkout 5.0.3-divus
+git checkout 2935-update-vpm
 git submodule update --init --recursive
 mkdir -p build
 cd build
 DATETIME="$(date +'%Y%m%d%H%M%S')"
-git tag -a "5.1.0-divus-$DATETIME" -m 'temporary tag for building'
+git tag -a "5.1.51-divus-$DATETIME" -m 'temporary tag for building'
 cmake .. -DLINPHONESDK_PLATFORM=Android \
         -DLINPHONESDK_ANDROID_ARCHS=arm64 \
         -DENABLE_GPL_THIRD_PARTIES=ON \
